@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Design using Grid</title>
+    <style>
+      .main {
+        padding: 10px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px;
+        grid-auto-rows: 100px;
+      }
+      .child {
+        background-color: aqua;
+        font-size: 10px;
+        text-align: center;
+      }
+      .c3 {
+        background-color: rgb(83, 255, 83);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .c1{
+        background-color: rgb(59, 239, 203);
+      }
+      .c2{
+        background-color: rgb(239, 194, 59);
+      }
+      .c4{
+        background-color: rgb(164, 13, 234);
+      }
+      .c5{
+        background-color: rgb(239, 59, 197);
+      }
+      .c6{
+        background-color: rgb(59, 194, 239);
+      }
+      .main1 {
+        padding: 10px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px;
+        grid-auto-rows: 100px;
+      }
+      .childs {
+        background-color: aqua;
+        font-size: 10px;
+        text-align: center;
+      }
+      .d1 {
+        background-color: rgba(88, 200, 13, 0.815);
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      .d2 {
+        background-color: rgba(88, 200, 13, 0.815);
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .d6 {
+        background-color: rgba(88, 200, 13, 0.815);
+        grid-column-start: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .d3{
+        background-color: rgb(255, 39, 39);
+      }
+      .d5{
+        background-color: rgb(255, 39, 39);
+      }
+      .d7{
+        background-color: rgb(255, 39, 39);
+      }
+      .d4{
+        background-color: rgb(241, 176, 36);
+      }
+      .d8{
+        background-color: rgb(241, 176, 36);
+      }
+
+      .main2 {
+        padding: 10px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 100px 100px 70px 70px 90px 90px 20px;
+        grid-template-rows: 100px 100px;
+        grid-auto-rows: 150px;
+      }
+      .childss {
+        background-color: aqua;
+        font-size: 10px;
+        text-align: center;
+      }
+      .e1{
+        background-color: rgba(255, 0, 0, 0.619);
+      }
+      .e3{
+        background-color: rgba(65, 248, 20, 0.619);
+      }
+      .e2 {
+        background-color: rgba(14, 226, 219, 0.888);
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .e7 {
+        background-color: rgba(213, 74, 23, 0.919);
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      
+      .e8 {
+        background-color:  rgba(241, 150, 116, 0.938);
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      .e4{
+        background-color: rgb(32, 165, 218);
+        grid-column-start: 5;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      .e6{
+        background-color: rgb(23, 99, 199);
+        grid-row-start: 1;
+        grid-column-start: 6;
+        grid-row-end: 4;
+      }
+      .e5{
+        background-color: skyblue;
+        grid-row-start: 1;
+        grid-column-start: 7;
+        grid-row-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="child c1">1</div>
+      <div class="child c2">2</div>
+      <div class="child c3">3</div>
+      <div class="child c4">4</div>
+      <div class="child c5">5</div>
+      <div class="child c6">6</div>
+    </div>
+
+    <div class="main1">
+      <div class="childs d1">1</div>
+      <div class="childs d2">2</div>
+      <div class="childs d3">3</div>
+      <div class="childs d4">4</div>
+      <div class="childs d5">5</div>
+      <div class="childs d6">6</div>
+      <div class="childs d7">7</div>
+      <div class="childs d8">8</div>
+    </div>
+
+    <div class="main2">
+        <div class="childss e1">1</div>
+        <div class="childss e2">2</div>
+        <div class="childss e3">3</div>
+        <div class="childss e4">4</div>
+        <div class="childss e5">5</div>
+        <div class="childss e6">6</div>
+        <div class="childss e7">7</div>
+        <div class="childss e8">8</div>
+      </div>
+  </body>
+</html>
